@@ -59,3 +59,5 @@ D:\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\
 D:\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 D:\ReCapProject\ReCapProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.csproj.CoreCompileInputs.cache
+D:\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Core.dll
+D:\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Core.pdb

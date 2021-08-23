@@ -10,3 +10,5 @@ D:\ReCapProject\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.cspr
 D:\ReCapProject\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 D:\ReCapProject\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
 D:\ReCapProject\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\ReCapProject\ReCapProject\DataAccess\bin\Debug\netstandard2.0\Core.dll
+D:\ReCapProject\ReCapProject\DataAccess\bin\Debug\netstandard2.0\Core.pdb
