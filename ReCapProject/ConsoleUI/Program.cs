@@ -29,8 +29,13 @@ namespace ConsoleUI
             //GetAllCars();
             //GetCar();
 
+            //GetCatDetails();
+        }
+
+        private static void GetCatDetails()
+        {
             CarManager carManager = new CarManager(new EFCarDal());
-            foreach (var car in carManager.GetCarDetails())
+            foreach (var car in carManager.GetCarDetails().Data)
             {
                 Console.WriteLine($"{car.CarName} - {car.BrandName} - {car.ColorName} - {car.DailyPrice}");
             }
@@ -39,14 +44,14 @@ namespace ConsoleUI
         private static void GetCar()
         {
             CarManager carManager = new CarManager(new EFCarDal());
-            Car car = carManager.GetById(3);
+            Car car = carManager.GetById(3).Data;
             Console.WriteLine(car.Name);
         }
 
         private static void GetAllCars()
         {
             CarManager carManager = new CarManager(new EFCarDal());
-            foreach (var car in carManager.GetAll())
+            foreach (var car in carManager.GetAll().Data)
             {
                 Console.WriteLine($"{car.Id} - {car.Name} - {car.Description}");
             }
@@ -76,22 +81,24 @@ namespace ConsoleUI
         private static void AddCar()
         {
             CarManager carManager = new CarManager(new EFCarDal());
-            carManager.Add(new Car { Name = "BMW X5", BrandId = 1, ColorId = 1, Description = "BMW X5 desc", DailyPrice = 20000 });
-            carManager.Add(new Car { Name = "BMW X6", BrandId = 1, ColorId = 2, Description = "BMW X6 desc", DailyPrice = 30000 });
-            carManager.Add(new Car { Name = "Opel Astra", BrandId = 2, ColorId = 2, Description = "Opel Astra desc", DailyPrice = 10000 });
+            //carManager.Add(new Car { Name = "BMW X5", BrandId = 1, ColorId = 1, Description = "BMW X5 desc", DailyPrice = 20000 });
+            //carManager.Add(new Car { Name = "BMW X6", BrandId = 1, ColorId = 2, Description = "BMW X6 desc", DailyPrice = 30000 });
+            //carManager.Add(new Car { Name = "Opel Astra", BrandId = 2, ColorId = 2, Description = "Opel Astra desc", DailyPrice = 10000 });
+            var result = carManager.Add(new Car { Name = "O", BrandId = 2, ColorId = 2, Description = "Opel Astra desc", DailyPrice = 10000 });
+            Console.WriteLine(result.Message);
         }
 
         private static void GetColor()
         {
             ColorManager colorManager = new ColorManager(new EFColorDal());
-            Color color = colorManager.GetById(2);
+            Color color = colorManager.GetById(2).Data;
             Console.WriteLine(color.Name);
         }
 
         private static void GetAllColors()
         {
             ColorManager colorManager = new ColorManager(new EFColorDal());
-            foreach (var color in colorManager.GetAll())
+            foreach (var color in colorManager.GetAll().Data)
             {
                 Console.WriteLine($"{color.Id} - {color.Name}");
             }
@@ -129,13 +136,13 @@ namespace ConsoleUI
         private static void GetBrand()
         {
             BrandManager brandManager = new BrandManager(new EFBrandDal());
-            Console.WriteLine(brandManager.GetById(1).Name);
+            Console.WriteLine(brandManager.GetById(1).Data.Name);
         }
 
         private static void GetAllBrands()
         {
             BrandManager brandManager = new BrandManager(new EFBrandDal());
-            foreach (var brand in brandManager.GetAll())
+            foreach (var brand in brandManager.GetAll().Data)
             {
                 Console.WriteLine(brand.Id + " - " + brand.Name);
             }
@@ -165,9 +172,9 @@ namespace ConsoleUI
         private static void AddBrand()
         {
             BrandManager brandManager = new BrandManager(new EFBrandDal());
-            //brandManager.Add(new Brand { Name = "BMW" });
-            //brandManager.Add(new Brand { Name = "Mercedes" });
-            //brandManager.Add(new Brand { Name = "Opel" });
+            //var result = brandManager.Add(new Brand { Name = "Mercedes" });
+            //Console.WriteLine(result.Message);
+
         }
     }
 }
