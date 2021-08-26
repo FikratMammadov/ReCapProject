@@ -4,14 +4,16 @@ using DataAccess.Concrete.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(ReCapContext))]
-    partial class ReCapContextModelSnapshot : ModelSnapshot
+    [Migration("20210826131012_RentalTable")]
+    partial class RentalTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -98,8 +100,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId")
-                        .IsUnique();
+                    b.HasIndex("UserId");
 
                     b.ToTable("Customers");
                 });
@@ -120,7 +121,7 @@ namespace DataAccess.Migrations
                     b.Property<DateTime>("RentDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("ReturnDate")
+                    b.Property<DateTime>("ReturnDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -174,8 +175,8 @@ namespace DataAccess.Migrations
             modelBuilder.Entity("Entities.Concrete.Customer", b =>
                 {
                     b.HasOne("Entities.Concrete.User", "User")
-                        .WithOne("Customer")
-                        .HasForeignKey("Entities.Concrete.Customer", "UserId")
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -183,13 +184,13 @@ namespace DataAccess.Migrations
             modelBuilder.Entity("Entities.Concrete.Rental", b =>
                 {
                     b.HasOne("Entities.Concrete.Car", "Car")
-                        .WithMany("Rentals")
+                        .WithMany()
                         .HasForeignKey("CarId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Entities.Concrete.Customer", "Customer")
-                        .WithMany("Rentals")
+                        .WithMany()
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

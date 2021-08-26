@@ -1,9 +1,11 @@
 ﻿using Business.Concrete;
+using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
 using System;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace ConsoleUI
 {
@@ -30,6 +32,58 @@ namespace ConsoleUI
             //GetCar();
 
             //GetCatDetails();
+
+            //AddUser();
+
+            //AddCustomer();
+            //AddRental();
+
+        }
+
+        private static void AddRental()
+        {
+            RentalManager rentalManager = new RentalManager(new EFRentalDal());
+            var result = rentalManager.Add(new Rental
+            {
+                CarId = 1,
+                CustomerId = 1,
+                RentDate = DateTime.Now,
+                ReturnDate = DateTime.Now
+            });
+            Console.WriteLine(result.Message);
+        }
+
+        private static void AddCustomer()
+        {
+            CustomerManager customerManager = new CustomerManager(new EFCustomerDal());
+            var result = customerManager.Add(new Customer { UserId = 2, CompanyName = "Alicompany" });
+            Console.WriteLine(result.Message);
+        }
+
+        private static void AddUser()
+        {
+            UserManager userManager = new UserManager(new EFUserDal());
+            userManager.Add(new User
+            {
+                FirstName = "Fikrat",
+                LastName = "Mammadov",
+                Email = "fikrat@gmail.com",
+                Password = "fikrat"
+            });
+            userManager.Add(new User
+            {
+                FirstName = "Ali",
+                LastName = "Mammadov",
+                Email = "ali@gmail.com",
+                Password = "ali"
+            });
+            userManager.Add(new User
+            {
+                FirstName = "Togrul",
+                LastName = "Mesimli",
+                Email = "togrul@gmail.com",
+                Password = "togrul"
+            });
         }
 
         private static void GetCatDetails()

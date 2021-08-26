@@ -18,5 +18,7 @@ namespace Entities.Concrete
         public DateTime ModelYear { get; set; }
         public double DailyPrice { get; set; }
         public string Description { get; set; }
+        // Navigation Properties
+        public List<Rental> Rentals { get; set; }
     }
 }
