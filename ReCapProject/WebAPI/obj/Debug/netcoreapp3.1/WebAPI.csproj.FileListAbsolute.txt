@@ -138,3 +138,7 @@ D:\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicatio
 D:\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.dll
 D:\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 D:\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
+D:\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.dll
+D:\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+D:\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+D:\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll

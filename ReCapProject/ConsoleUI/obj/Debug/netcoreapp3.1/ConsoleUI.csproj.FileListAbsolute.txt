@@ -61,3 +61,7 @@ D:\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.EntityF
 D:\ReCapProject\ReCapProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.csproj.CoreCompileInputs.cache
 D:\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Core.dll
 D:\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Core.pdb
+D:\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.dll
+D:\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+D:\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+D:\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Castle.Core.dll
