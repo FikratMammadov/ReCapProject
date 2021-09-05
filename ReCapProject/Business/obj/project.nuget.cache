@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/qzjE0e46HaAdkwhhjg6nq3C2mLbNQIq8waxj0UoUq0wf8E9sFXFAk96MuD5MrY8aRUxaMaujPcx9nNdGygalQ==",
+  "dgSpecHash": "rnyU9i0w99pREjbeu/m4C0I4cNorelsCUYOcEc0cHrSaDo7wti9+EvPKpNySLqPzLTNaanJZ0cywuwyKQqnNoQ==",
   "success": true,
   "projectFilePath": "D:\\ReCapProject\\ReCapProject\\Business\\Business.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Fikret\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.0\\autofac.extras.dynamicproxy.6.0.0.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\Fikret\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

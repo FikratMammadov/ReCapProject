@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LFPIAQibbuUFwazzFurWecn6FdzsDGJUVr2Dmddds+XziMH0bqhah0qkPsMBbsiyTh+sxJpNgIqW0kRIXaOkiA==",
+  "dgSpecHash": "QpJuQvP1BZUprRLRMKmEpE9On5TrcXtyQ763JFeum8pgs3al8pym6lY31tD+s4L4qX78+1VlvdEqkl3cVc+4dw==",
   "success": true,
   "projectFilePath": "D:\\ReCapProject\\ReCapProject\\Core\\Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Fikret\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.18\\microsoft.entityframeworkcore.3.1.18.nupkg.sha512",
