@@ -20,5 +20,6 @@ namespace Entities.Concrete
         public string Description { get; set; }
         // Navigation Properties
         public List<Rental> Rentals { get; set; }
+        public List<CarImages> CarImages { get; set; }
     }
 }
