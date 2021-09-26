@@ -32,7 +32,9 @@ namespace Business.Constants
         public static string RentalDeleted = "Rental deleted successfully.";
         public static string RentalUpdated = "Rental updated successfully.";
         public static string CarDoesNotReturn = "Car has not been delivered";
-        
 
+        public static string CarImageAdded = "Car image added successfully.";
+        public static string CarImageDeleted = "Car image deleted successfully.";
+        public static string CarImageUpdated = "Car image updated successfully.";
     }
 }

@@ -133,8 +133,6 @@ D:\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAna
 D:\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CoreCompileInputs.cache
-D:\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache
 D:\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.dll
 D:\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 D:\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
@@ -143,3 +141,6 @@ D:\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extensions.D
 D:\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
 D:\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
 D:\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+D:\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CoreCompileInputs.cache
+D:\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache

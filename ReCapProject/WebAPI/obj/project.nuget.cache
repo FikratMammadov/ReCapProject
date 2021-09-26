@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sk0lH/IWiU7OxCy9Yk06r+hx5PAxvk7kbsyW6k39ywWd5i+OPENGtm1h+3UUAmwfqelqslqeh4b7PZwG9oDfRw==",
+  "dgSpecHash": "XRYtIlqdwU6qSbB8QQxNV9bZ336MGLKwjeU2Zd0tQ2zWuVLc64kBzql9d84XGMWzeANMzx6IZtVEId+FUCNnCQ==",
   "success": true,
   "projectFilePath": "D:\\ReCapProject\\ReCapProject\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -25,11 +25,12 @@
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\3.3.1\\microsoft.codeanalysis.csharp.workspaces.3.3.1.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.codeanalysis.razor\\3.1.0\\microsoft.codeanalysis.razor.3.1.0.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\3.3.1\\microsoft.codeanalysis.workspaces.common.3.3.1.nupkg.sha512",
-    "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.data.sqlclient\\1.1.3\\microsoft.data.sqlclient.1.1.3.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.18\\microsoft.entityframeworkcore.3.1.18.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.18\\microsoft.entityframeworkcore.abstractions.3.1.18.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.18\\microsoft.entityframeworkcore.analyzers.3.1.18.nupkg.sha512",
+    "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.8\\microsoft.entityframeworkcore.design.3.1.8.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.18\\microsoft.entityframeworkcore.relational.3.1.18.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.18\\microsoft.entityframeworkcore.sqlserver.3.1.18.nupkg.sha512",
     "C:\\Users\\Fikret\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.18\\microsoft.extensions.caching.abstractions.3.1.18.nupkg.sha512",

@@ -2,50 +2,101 @@
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace Core.Utilities.Helpers
 {
-    class FileHelper : IFileHelper
+    public class FileHelper : IFileHelper
     {
+        private static string _currentDirectory =  Environment.CurrentDirectory+"\\wwwroot";
+        private static string _folderName = "\\images\\";
         public void CheckDirectoryExists(string directory)
         {
-            throw new NotImplementedException();
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
         }
 
         public IResult CheckFileExists(IFormFile file)
         {
-            throw new NotImplementedException();
+            if (file!=null&&file.Length>0)
+            {
+                return new SuccessResult();
+            }
+            return new ErrorResult();
         }
 
         public IResult CheckFileTypeValid(string type)
         {
-            throw new NotImplementedException();
+            if (type!=".jpeg" || type!= ".png" || type!=".jpg")
+            {
+                return new ErrorResult("Bu tipde bir dosya yuklenemez");
+            }
+            return new SuccessResult();
         }
 
         public void CreateFile(string directory, IFormFile file)
         {
-            throw new NotImplementedException();
+            using (FileStream fs = File.Create(directory))
+            {
+                file.CopyTo(fs);
+                fs.Flush();
+            }
         }
 
         public IResult Delete(string path)
         {
-            throw new NotImplementedException();
+            DeleteOldFile((_currentDirectory + path).Replace("/", "\\"));
+            return new SuccessResult();
         }
 
         public void DeleteOldFile(string directory)
         {
-            throw new NotImplementedException();
+            if (File.Exists(directory.Replace("/","\\")))
+            {
+                File.Delete(directory.Replace("/", "\\"));
+            }
         }
 
         public IResult Update(IFormFile file, string imagePath)
         {
-            throw new NotImplementedException();
+            var fileExists = CheckFileExists(file);
+            if (fileExists.Message!=null)
+            {
+                return new ErrorResult(fileExists.Message);
+            }
+            var type = Path.GetExtension(file.FileName);
+            var typeValid = CheckFileTypeValid(type);
+            var randomName = Guid.NewGuid().ToString();
+            if (typeValid==null)
+            {
+                return new ErrorResult();
+            }
+            CheckDirectoryExists(_currentDirectory + _folderName);
+            CreateFile(_currentDirectory + _folderName + randomName + type, file);
+            return new SuccessResult((_folderName+randomName+type).Replace("\\","/"));
         }
 
         public IResult Upload(IFormFile file)
         {
-            throw new NotImplementedException();
+            var fileExists = CheckFileExists(file);
+            if (fileExists.Message != null)
+            {
+                return new ErrorResult(fileExists.Message);
+            }
+            var type = Path.GetExtension(file.FileName);
+            var typeValid = CheckFileTypeValid(type);
+            var randomName = Guid.NewGuid().ToString();
+
+            if (typeValid == null)
+            {
+                return new ErrorResult(typeValid.Message);
+            }
+            CheckDirectoryExists(_currentDirectory + _folderName);
+            CreateFile(_currentDirectory + _folderName + randomName + type, file);
+            return new SuccessResult((_folderName + randomName + type).Replace("\\", "/"));
         }
     }
 }

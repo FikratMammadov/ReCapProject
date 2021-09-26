@@ -68,21 +68,18 @@ namespace ConsoleUI
                 FirstName = "Fikrat",
                 LastName = "Mammadov",
                 Email = "fikrat@gmail.com",
-                Password = "fikrat"
             });
             userManager.Add(new User
             {
                 FirstName = "Ali",
                 LastName = "Mammadov",
                 Email = "ali@gmail.com",
-                Password = "ali"
             });
             userManager.Add(new User
             {
                 FirstName = "Togrul",
                 LastName = "Mesimli",
                 Email = "togrul@gmail.com",
-                Password = "togrul"
             });
         }
 

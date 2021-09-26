@@ -25,7 +25,8 @@ namespace Business.Concrete
         public IResult Add(Car car)
         {
             //ValidationTool.Validate(new CarValidator(), car);
-            return new ErrorResult(Messages.CarAddedInvalid);
+            _carDal.Add(car);
+            return new SuccessResult(Messages.CarAdded);
         }
 
         public IResult Delete(Car car)
