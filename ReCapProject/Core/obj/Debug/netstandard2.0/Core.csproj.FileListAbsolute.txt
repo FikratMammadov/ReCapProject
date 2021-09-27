@@ -6,4 +6,3 @@ D:\ReCapProject\ReCapProject\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
 D:\ReCapProject\ReCapProject\Core\bin\Debug\netstandard2.0\Core.pdb
 D:\ReCapProject\ReCapProject\Core\obj\Debug\netstandard2.0\Core.dll
 D:\ReCapProject\ReCapProject\Core\obj\Debug\netstandard2.0\Core.pdb
-D:\ReCapProject\ReCapProject\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
