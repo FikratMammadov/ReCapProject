@@ -15,7 +15,6 @@ namespace Core.Entities.Concrete
         public byte[] PasswordSalt { get; set; }
         public bool Status { get; set; }
         // Navigation Properties
-        public Customer Customer { get; set; }
         public List<UserOperationClaim> UserOperationClaims { get; set; }
 
     }
